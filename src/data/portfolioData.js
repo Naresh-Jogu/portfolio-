@@ -58,13 +58,13 @@ export const projects = [
 
   {
     id: 1,
-    title: 'E-commerce Platform',
+    title: 'Nxt trenzds',
     description: 'A full-stack e-commerce application with authentication, product management, and payment integration.',
     image: null,
     tags: ['MongoDB', 'Express', 'React', 'Node.js', 'Stripe'],
     type: 'Full Stack', // MUST match filter
     github: 'https://github.com/Naresh-Jogu',
-    live: 'https://your-live-link.com',
+    live: 'https://yournxttrendzzs.ccbp.tech/login',
     featured: true,
     year: '2026',
     status: 'Completed',
