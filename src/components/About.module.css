@@ -1,0 +1,88 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.bio {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 36px;
+}
+
+.techChip {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 50px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.techChip:hover {
+  border-color: var(--border-hover);
+  color: var(--accent);
+  background: rgba(0,229,190,0.06);
+}
+
+.actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--card) !important;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: var(--card-hover) !important;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px; height: 44px;
+  background: rgba(0,229,190,.1);
+  border: 1px solid rgba(0,229,190,.2);
+  border-radius: 12px;
+  color: var(--accent);
+}
+
+.cardTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cardDesc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; gap: 50px; }
+}
+
+@media (max-width: 500px) {
+  .cards { grid-template-columns: 1fr; }
+}
